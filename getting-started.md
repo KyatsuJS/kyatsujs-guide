@@ -28,5 +28,23 @@ You can also use PNPM or YARN.
 
 ## Importation and basic usage
 
-Once your package is downloaded...
+Once your package is downloaded, you can import the package and start building whatever you want.
+
+{% tabs %}
+{% tab title="JavaScript" %}
+{% code title="index.js" lineNumbers="true" %}
+```javascript
+const kyatsujs = require("kyatsujs");
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="TypeScript" %}
+{% code title="index.ts" lineNumbers="true" %}
+```typescript
+import * as kyatsujs from "kyatsujs";
+```
+{% endcode %}
+{% endtab %}
+{% endtabs %}
 
