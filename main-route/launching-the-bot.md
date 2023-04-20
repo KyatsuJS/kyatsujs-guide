@@ -51,3 +51,9 @@ Now, let's explain what we wrote.
 3. Then, line 8, we appeal the method `login()` method from the `KyaClient` instance, to launch some data to Discord and the bot.
 
 Note that the `void` keyword before the third instruction (line 8) isn't necessary. It's for code aesthetically.
+
+{% hint style="info" %}
+The `init()` method can be called before creating an instance of the Kyatsu Client because it's a static method that parse the passed arguments. This allows the developer to pass different types of parameters, without conflict the `KyaClient` class parameters.
+
+For more informations about typings, check the [**Full Documentation**](https://kyatsujs-doc.vercel.app).
+{% endhint %}
