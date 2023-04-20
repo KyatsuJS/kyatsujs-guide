@@ -3,6 +3,6 @@
 * [🏠 Home](README.md)
 * [🚙 Getting started](getting-started.md)
 
-## 🌱 Main route
+## Main route
 
-* [Launching the bot](main-route/launching-the-bot.md)
+* [🌱 Launching the bot](main-route/launching-the-bot.md)
