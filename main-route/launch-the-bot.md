@@ -12,18 +12,15 @@ We won't go through 4 ways, there is a first code snippet:
 
 {% tabs %}
 {% tab title="JavaScript" %}
-{% code title="index.js" lineNumbers="true" %}
-```javascript
-// Import the package
-const kyatsujs = require("kyatsujs");
-
+<pre class="language-javascript" data-title="index.js" data-line-numbers><code class="lang-javascript">// Import the package
+<strong>const kyatsujs = require("kyatsujs");
+</strong>
 // Create an instance of the Kyatsu Client
-const bot = kyatsujs.KyaClient.init("your token here");
-
+<strong>const bot = kyatsujs.KyaClient.init("your token here");
+</strong>
 // Launch the bot
-void bot.login();
-```
-{% endcode %}
+<strong>void bot.login();
+</strong></code></pre>
 {% endtab %}
 
 {% tab title="TypeScript" %}

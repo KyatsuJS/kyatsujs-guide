@@ -8,7 +8,7 @@ coverY: 160
 
 ## Basics & Introduction
 
-KyatsuJS can handle few default events. These events are listed [**here**](https://kyatsujs-doc.vercel.app/types/availableEvent.html). As commands, Kyatsu Client includes its own `EventManager` class instance in the `Events` attributes. Few methods allow us to manage events to bind, and to customize.
+KyatsuJS can handle few default events. These events are listed [**here**](https://kyatsujs-doc.vercel.app/types/availableEvent.html). As commands, Kyatsu Client includes its own [`EventManager`](https://kyatsujs-doc.vercel.app/classes/EventManager.html) class instance in the [`Events`](https://kyatsujs.gitbook.io/guides/main-route/binding-and-handling-events) attributes. Few methods allow us to manage events to bind, and to customize.
 
 ### Default case
 
@@ -16,9 +16,11 @@ If no event is configured, it can handle the defaults event listed above. There 
 
 {% tabs %}
 {% tab title="JavaScript" %}
-<pre class="language-javascript" data-title="events.js" data-line-numbers><code class="lang-javascript"><strong>// Ready event
-</strong><strong>bot.on('ready', client => {
-</strong>  log(`Logged in as ${client.resolved.user.tag}.`);
+{% code title="events.js" lineNumbers="true" %}
+```javascript
+// Ready event
+bot.on('ready', client => {
+  log(`Logged in as ${client.resolved.user.tag}.`);
 });
 
 // Interaction create event
@@ -32,7 +34,8 @@ bot.on(
     }
   }
 );
-</code></pre>
+```
+{% endcode %}
 
 We advise you to check the TypeScript version, in the next tab, for a better understanding of this code.
 {% endtab %}
@@ -72,25 +75,19 @@ Now, after having told how events can be handled, let's show you why you are her
 
 ### Binding a default event
 
-{% code title="events.js" lineNumbers="true" %}
-```javascript
-// ...
-bot.Events.bindEvent("interactionCreate");
-```
-{% endcode %}
+<pre class="language-javascript" data-title="events.js" data-line-numbers><code class="lang-javascript">// ...
+<strong>bot.Events.bindEvent("interactionCreate");
+</strong></code></pre>
 
 ### Binding an event using your own function
 
 That method works for default events and not default events.
 
-{% code title="events.js" lineNumbers="true" %}
-```javascript
-// ...
-bot.Events.bindEvent("interactionCreate", (client, interaction) => {
-    // Some code here
-});
-```
-{% endcode %}
+<pre class="language-javascript" data-title="events.js" data-line-numbers><code class="lang-javascript">// ...
+<strong>bot.Events.bindEvent("interactionCreate", (client, interaction) => {
+</strong><strong>    // Some code here
+</strong><strong>});
+</strong></code></pre>
 
 The function passed as argument must contain the client parameter first. The `client` parameter will be a `KyaClient` instance once the event is triggered. Then, the following parameters are the same as the Discord.js event.
 
@@ -98,12 +95,9 @@ The function passed as argument must contain the client parameter first. The `cl
 
 If you don't want some events to be triggered, you can unbind them with the following code:
 
-{% code title="events.js" lineNumbers="true" %}
-```javascript
-// ...
-bot.Events.unbindEvent("interactionCreate");
-```
-{% endcode %}
+<pre class="language-javascript" data-title="events.js" data-line-numbers><code class="lang-javascript">// ...
+<strong>bot.Events.unbindEvent("interactionCreate");
+</strong></code></pre>
 
 Unbinding events removes completely the event, and this latter won't be listened at all.
 

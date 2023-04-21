@@ -97,19 +97,14 @@ We want now to add a callback function to our ping command, that replies "Pong !
 
 We can now create our command:
 
-{% code title="index.js" lineNumbers="true" %}
-```javascript
-const pingCommandAction = (command, interaction) => {
-    interaction.reply("Pong !").catch(err => console.log(err));
-};
-```
-{% endcode %}
+<pre class="language-javascript" data-title="index.js" data-line-numbers><code class="lang-javascript"><strong>const pingCommandAction = (command, interaction) => {
+</strong><strong>    interaction.reply("Pong !").catch(err => console.log(err));
+</strong><strong>};
+</strong></code></pre>
 
 And now, let's implement it in our main code, with the full code:
 
-{% code title="index.js" lineNumbers="true" %}
-```javascript
-// ...
+<pre class="language-javascript" data-title="index.js" data-line-numbers><code class="lang-javascript">// ...
 const pingCommandData = {
     options: {
         name: "ping",
@@ -118,13 +113,12 @@ const pingCommandData = {
 
 const pingCommand = bot.Commands.create(pingCommandData);
 
-const pingCommandAction = (command, interaction) => {
-    interaction.reply("Pong !").catch(err => console.log(err));
-};
-
-bot.Commands.add(pingCommand);
-```
-{% endcode %}
+<strong>const pingCommandAction = (command, interaction) => {
+</strong><strong>    interaction.reply("Pong !").catch(err => console.log(err));
+</strong><strong>};
+</strong>
+<strong>bot.Commands.add(pingCommand);
+</strong></code></pre>
 
 ## Registering of our commands
 
@@ -132,9 +126,7 @@ Now, we added all our commands and want to send them to the Discord API for usin
 
 We can call the function [`load()`](https://kyatsujs-doc.vercel.app/classes/CommandManager.html#load) in the [`CommandManager`](https://kyatsujs-doc.vercel.app/classes/CommandManager.html). There is the full code:
 
-{% code title="index.js" lineNumbers="true" %}
-```javascript
-// ...
+<pre class="language-javascript" data-title="index.js" data-line-numbers><code class="lang-javascript">// ...
 const pingCommandData = {
     options: {
         name: "ping",
@@ -148,9 +140,8 @@ const pingCommandAction = (command, interaction) => {
 };
 
 bot.Commands.add(pingCommand);
-bot.Commands.load();
-```
-{% endcode %}
+<strong>bot.Commands.load();
+</strong></code></pre>
 
 Now, express your creativity and make beautiful handlers !
 
