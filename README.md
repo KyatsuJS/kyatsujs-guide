@@ -14,6 +14,10 @@ All the covers used in this GitBook are from [**Ying Yi - ArtStation**](https://
 
 It's important to note that KyatsuJS is currently in a beta version, so many bugs could appear as you progress.
 
+## What is KyatsuJS
+
+KyatsuJS is a NPM package that allows developers to build Discord bots easily, profiting multiple services likes panel creators, commands manager, events manager, and more.
+
 ## Versioning
 
 This guide and the [**Full Documentation**](https://kyatsujs-doc.vercel.app/) are giving data about the latest stable minor version (patches don't affect the content here). **No documentation and no guide are available** for previous versions.
