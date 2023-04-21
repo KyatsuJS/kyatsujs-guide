@@ -6,6 +6,8 @@ coverY: 0
 
 # 🌱 Launch the bot
 
+## Importation
+
 We won't go through 4 ways, there is a first code snippet:
 
 {% tabs %}
@@ -44,6 +46,8 @@ Of course, in the JavaScript version, you can also use destructured import:&#x20
 
 `const { KyaClient } = require("kyatsujs");`
 
+## Explanation of our code
+
 Now, let's explain what we wrote.
 
 1. The first instruction, line 2, declares the constant `kyatsujs` that contains the package.
@@ -57,6 +61,8 @@ The [`init()`](https://kyatsujs-doc.vercel.app/classes/KyaClient.html) method ca
 
 For more informations about typings, check the [**Full Documentation**](https://kyatsujs-doc.vercel.app).
 {% endhint %}
+
+## Successful launching
 
 Once your bot is launched, something should appear in the Run Console:
 

@@ -7,3 +7,4 @@
 
 * [🌱 Launch the bot](main-route/launch-the-bot.md)
 * [🕹 Creating commands](main-route/creating-commands.md)
+* [❗ Binding & handling events](main-route/binding-and-handling-events.md)

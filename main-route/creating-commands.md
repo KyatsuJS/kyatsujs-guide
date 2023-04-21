@@ -126,7 +126,7 @@ bot.Commands.add(pingCommand);
 ```
 {% endcode %}
 
-### Registering our commands
+## Registering of our commands
 
 Now, we added all our commands and want to send them to the Discord API for using them on Discord.
 
