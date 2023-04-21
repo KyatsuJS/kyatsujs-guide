@@ -16,6 +16,12 @@ It's important to note that KyatsuJS is currently in a beta version, so many bug
 
 ## Versioning
 
-This guide and the Full Documentation are giving data about the latest stable minor version (patches don't affect the content here). **No documentation and no guide are available** for previous versions.
+This guide and the [**Full Documentation**](https://kyatsujs-doc.vercel.app/) are giving data about the latest stable minor version (patches don't affect the content here). **No documentation and no guide are available** for previous versions.
 
 Moreover, **don't forget to refresh the app to view changes** ! GitBook stores website data in a cache and doesn't refresh these data each time.
+
+## Useful links
+
+* [**Full Documentation**](https://kyatsujs-doc.vercel.app/)
+* [**NPM Page**](https://www.npmjs.org/package/kyatsujs)
+* [**GitHub**](https://github.com/KyatsuJS)
