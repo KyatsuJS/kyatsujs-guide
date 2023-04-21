@@ -95,7 +95,68 @@ We want now to add a callback function to our ping command, that replies "Pong !
 * `command`: The command instance.
 * `interaction`: The interaction associated with the command trigger.
 
+We can now create our command:
 
+{% code title="index.js" lineNumbers="true" %}
+```javascript
+const pingCommandAction = (command, interaction) => {
+    interaction.reply("Pong !").catch(err => console.log(err));
+};
+```
+{% endcode %}
+
+And now, let's implement it in our main code, with the full code:
+
+{% code title="index.js" lineNumbers="true" %}
+```javascript
+// ...
+const pingCommandData = {
+    options: {
+        name: "ping",
+    }
+};
+
+const pingCommand = bot.Commands.create(pingCommandData);
+
+const pingCommandAction = (command, interaction) => {
+    interaction.reply("Pong !").catch(err => console.log(err));
+};
+
+bot.Commands.add(pingCommand);
+```
+{% endcode %}
+
+### Registering our commands
+
+Now, we added all our commands and want to send them to the Discord API for using them on Discord.
+
+We can call the function [`load()`](https://kyatsujs-doc.vercel.app/classes/CommandManager.html#load) in the [`CommandManager`](https://kyatsujs-doc.vercel.app/classes/CommandManager.html). There is the full code:
+
+{% code title="index.js" lineNumbers="true" %}
+```javascript
+// ...
+const pingCommandData = {
+    options: {
+        name: "ping",
+    }
+};
+
+const pingCommand = bot.Commands.create(pingCommandData);
+
+const pingCommandAction = (command, interaction) => {
+    interaction.reply("Pong !").catch(err => console.log(err));
+};
+
+bot.Commands.add(pingCommand);
+bot.Commands.load();
+```
+{% endcode %}
+
+Now, express your creativity and make beautiful handlers !
+
+{% hint style="info" %}
+Don't call the [`load()`](https://kyatsujs-doc.vercel.app/classes/CommandManager.html#load) method each time you restart your bot, unless if you did changes in the `options` object. This is for preventing `rateLimits` from Discord API.
+{% endhint %}
 
 
 
