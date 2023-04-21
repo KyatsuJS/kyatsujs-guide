@@ -39,7 +39,7 @@ const pingCommand = bot.Commands.create(pingCommandData);
 ```
 {% endcode %}
 
-Our constant `pingCommand` does now include an instance of [`Command`](https://kyatsujs-doc.vercel.app/classes/Command.html). To understand why the structure of `pingCommandData` seems weird, check the [`CommandOptions` interface](https://kyatsujs-doc.vercel.app/interfaces/CommandOptions.html). You can also pass a string if you just want to set a name for your command.
+Our constant `pingCommand` does now include an instance of [`Command`](https://kyatsujs-doc.vercel.app/classes/Command.html). To understand why the structure of `pingCommandData` seems weird, you can check all the structure and options possibles at the [`CommandOptions` interface](https://kyatsujs-doc.vercel.app/interfaces/CommandOptions.html). You can also pass a string if you just want to set a name for your command.
 
 You are going to say, "hey, this command doesn't do anything !". We are going to set it ! Once we have our command instance, made with the previous method, or manually, we can register it to the commands' manager. We do it this way:
 
