@@ -1,14 +1,30 @@
 # Table of contents
 
-* [🏠 Home](README.md)
-* [🚙 Getting started](getting-started.md)
+* [Home](README.md)
 
-## Main route
+## Create our bot
 
-* [🌱 Launch the bot](main-route/launch-the-bot.md)
-* [🕹 Creating commands](main-route/creating-commands.md)
-* [❗ Binding & handling events](main-route/binding-and-handling-events.md)
+* [Prerequesites](create-our-bot/prerequesites.md)
+* [Discord application](create-our-bot/discord-application.md)
+* [Initializing our project](create-our-bot/initializing-our-project.md)
+* [Installing KyatsuJS](create-our-bot/installing-kyatsujs.md)
+* [Setting up our first program](create-our-bot/setting-up-our-first-program.md)
 
-## Dive Further
+## Commands
 
-* [⏳ Logged in phases](dive-further/logged-in-phases.md)
+* [Simple commands](commands/simple-commands.md)
+* [More complex options](commands/more-complex-options.md)
+
+## Events
+
+* [Default events](events/default-events.md)
+* [Linking your own callback](events/linking-your-own-callback.md)
+* [Linking more events](events/linking-more-events.md)
+
+## Voice
+
+* [Voice events](voice/voice-events.md)
+
+## Useful things
+
+* [What is context](useful-things/what-is-context.md)
